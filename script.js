@@ -51,7 +51,7 @@ function chooseCities() {
 
     let city = +document.querySelector('.choiseSity').value;
     console.log(city);
-    fetch(`http://api.openweathermap.org/data/2.5/weather?id=${city}&lang=ru&&appid=68147acf6fa477f07a933575020eb023`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?id=${city}&lang=ru&&appid=68147acf6fa477f07a933575020eb023`)
         .then(function (resp) { return resp.json() })
         .then(function (data) {
             console.log(data);
